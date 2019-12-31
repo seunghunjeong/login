@@ -1,0 +1,11 @@
+package com.example.persistence;
+
+import org.springframework.transaction.annotation.Transactional;
+
+public interface MemberDAO {
+	// 비밀번호 변경
+	@Transactional
+	public int update_pw(MemberDTO member) throws Exception{
+		return sqlsession.update("member.update_pw", member);
+	}
+}

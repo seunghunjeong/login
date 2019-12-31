@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper  namespace="UserMapper">
+<update id="keepLogin">
+	update table_user set session_key=#{sessionId}, session_limit=#{sessionLimit} where uid=#{uid}
+</update>
+<select id="checkUserWithSessionKey" resultMap="userVOResultMap">
+	select * from table_user where tbl_user where session_key = #{value}
+</select>
+</mapper>

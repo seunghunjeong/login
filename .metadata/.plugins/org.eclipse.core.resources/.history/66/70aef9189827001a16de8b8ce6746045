@@ -1,0 +1,39 @@
+package com.example.web;
+
+import org.apache.commons.mail.HtmlEmail;
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class UserController {
+	@Autowired
+	PwmailSessionRepository pwmailSessionRepository;
+	
+	@RequestMapping(value="/find_password", method = RequestMethod.POST)
+	public String updateEmail(Member member, Model model) {
+		
+		String s="";
+		String st[] = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
+		Random r = new Random();
+		for(int i=1; i<=6; i++) {
+			
+			s+=st[r.nextInt(26)];
+			
+		}
+		member.setmPw(s);
+		Integer result = pwmailSessionRepository.updateEmail(member);		
+		model.addAttribute("result",result);
+		System.out.println("result : " + result);
+		try {
+			if(result>=1) {
+				mailing(member);
+			}else {
+				return "mail";
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
+			
+		}
+		
+		return "mail";
+	}
+}

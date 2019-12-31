@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+.body_mo {width: 360px;	height: 640px; text-align: center; margin:0px auto; font-size:13px; background-image:url('resources/image/ba02.png');}
+#naver_id_login {width:360px; }
+#kakao-login-btn {width:190px; }
+hr {width:360px; color:#d4d4d4;	margin-top:50px; }
+
+.log_a {font-size:13px; text-decoration:none; color:gray; }
+.log_a1 {font-size:13px; text-decoration:none; color:darkred; }
+.g-signin2 {text-align:center; margin-left:86px; }
+log_auto {font-size:13px; }
+.log_tbl {text-align:center; margin:0px auto;}
+.btn_login:hover {background:#600000; color:white;}

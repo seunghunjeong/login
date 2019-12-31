@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+.body_mo {
+	width:360px;
+	height:640px;
+	text-align:center;
+	margin:0px auto;
+}
+
+
+
+#naver_id_login {
+	width:360px;
+}
+
+#kakao-login-btn {
+	width:190px;
+}
+
+hr {
+	width:360px;
+	color:gray;
+	margin-top:50px;
+	
+}
+
+.log_a {
+	font-size:13px;
+	text-decoration:none;
+	color:gray;
+}
+
+.log_a1 {
+	font-size:13px;
+	text-decoration:none;
+	color:darkred;
+}
+
+.g-signin2 {
+	text-align:center;
+	margin-left:86px;
+}
+
+input.img-button {
+    background: url( "images/button_search.png" ) no-repeat;
+    border: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+      }

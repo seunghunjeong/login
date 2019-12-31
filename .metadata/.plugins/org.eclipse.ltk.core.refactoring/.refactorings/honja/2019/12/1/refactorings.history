@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;honja/src/main/resources/mappers/Mapper.xml&apos; to &apos;UserMapper.xml&apos;" description="Rename resource &apos;Mapper.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/mappers/Mapper.xml" name="UserMapper.xml" stamp="1577683232163" updateReferences="true"/>
+</session>
